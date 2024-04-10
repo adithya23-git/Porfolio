@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background-image: url('homebg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+
+}
+
+
+nav {
+    position: absolute;
+    right:0;
+    display: flex;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    background-color: rgb(229, 153, 112);
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+nav ul li:nth-child(even) {
+    background-color: hsl(272, 100%, 50%);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: rgb(4, 255, 255);
+    cursor:pointer;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.detail {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 18%;
+    line-height: 100px;
+}
+
+.detail h1 {
+    word-spacing: 10px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.detail .name {
+    font-family: "Rubik Scribble";
+    font-size: 6vw;
+    color: rgb(0, 0, 0);
+}
+
+.detail p {
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.detail .web {
+    color: rgb(255, 0, 0);
+    font-family: monospace;
+}
+
+.image {
+    background-color: white;
+    margin-bottom: 50px;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    box-shadow: 2px 2px 10px black, 0 0 20px rgba(172, 255, 47, 0.733), 0 0 30px rgba(2, 213, 250, 0.715);
+    border-radius: 10px;
+
+}
+
+.image .boy {
+    width: 30vw;
+    cursor: grab;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image:hover .boy {
+    left: 45%;
+}
+
+
+
+#skill {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('skills.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.desc {
+    position: absolute;
+}
+
+.desc h1 {
+    margin: 0 500px;
+    color: rgb(252, 132, 5);
+    font-style: oblique;
+    font-size: 70px;
+    font-family: "Concert one", sans-serif;
+}
+
+.desc .skill {
+    margin-left: 20px;
+    margin-top: 160px;
+    width: 60%;
+    height: 100px;
+    word-spacing: 5px;
+    font-weight: 400px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 2px;
+}
+
+.desc .skill span {
+    font-family: "Pacifico", sans-serif;
+    font-weight: bold;
+    color: rgb(68, 0, 255);
+
+}
+
+.skillimg img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    right: 130px;
+    bottom: 50px;
+    box-shadow: 2px 2px 10px black, 0 0 50px rgb(69, 199, 251);
+}
+
+
+#about {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+    padding: 0;
+    background-image: url('aboutbg2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.head {
+    position: absolute;
+}
+
+.head h1 {
+    margin: 0 400px;
+    font-family: "Sofia";
+    font-weight: bold;
+    font-size: 70px;
+    color: rgb(255, 0, 0);
+}
+
+.head p {
+    margin: 100px 20px;
+    font-family: "Pacifico";
+    font-size: 25px;
+    word-spacing: 5px;
+    color: green;
+}
+
+.aboutimages .movie {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    bottom: 0;
+    margin: 20px 20px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.aboutimages .music {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    right: 320px;
+    bottom: 130px;
+}
+
+
+#contact {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('contact.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.heading h1{
+    font-size: 60px;
+    font-family:"Fjalla one";
+    color:rgb(2, 2, 2)yellow;
+    font-weight: bold;
+    text-align: center;
+}
+.git a{
+    position: absolute;
+    margin: 240px 530px;
+    text-decoration:none;
+    color: rgb(2, 2, 2);
+
+}
+.git p{
+    font-family:"Imbue";
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    display: inline;
+    margin:10px 20px;
+    color: rgb(255, 0, 4);
+}
+.linkedin a{
+    position: absolute;
+    margin: 320px 520px;
+    text-decoration:none;
+    color: rgb(2, 2, 2);
+
+}
+.linkedin img{
+    width: 70px;
+}
+.linkedin p{
+    font-family:"Imbue";
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    display: inline;
+    margin:14px 15px;
+    color: rgb(0, 51, 255);
+}
+
